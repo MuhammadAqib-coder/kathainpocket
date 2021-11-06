@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusinessRegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buss_name"
+        android:text="Bussiness Name"
+        android:layout_marginTop="90dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editbuss_name"
+        android:ems="15"
+        android:layout_below="@+id/buss_name"
+        android:hint="enter name"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buss_type"
+        android:text="Bussiness Type"
+        android:layout_marginTop="90dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buss_name"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buss_type_spinner"
+        android:layout_below="@+id/buss_type"
+        android:entries="@array/business_type"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buss_image"
+        android:text="Bussiness Image"
+        android:layout_marginTop="90dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buss_type_spinner"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/circle_image"
+        android:layout_below="@id/buss_image"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#221818"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/get_image"
+        android:text="Get Image"
+        android:textColor="@color/white"
+        android:layout_below="@id/circle_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#301E1E"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:layout_below="@+id/get_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Register"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Katha In Pocket1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="business_type">
+        <item>Easyload</item>
+        <item>Genral Store </item>
+        <item>Super Store</item>
+        <item>Poltary Farm</item>
+        <item>Dairy Farm</item>
+    </string-array>
+</resources>
